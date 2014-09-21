@@ -1,8 +1,4 @@
-## Put comments here that give an overall description of what your
-## functions do
-
-## Write a short comment describing this function
-
+##This function creates a cached object for the calculation of the inverse
 makeCacheMatrix <- function(x = matrix()) {
   m<-NULL
   set<-function(y){
@@ -18,7 +14,7 @@ list(set=set, get=get,
 }
 
 
-## Write a short comment describing this function
+## This calculates the inverse of the object if it isn't already cached and if it is it pulls that data
 
 cacheSolve <- function(x=matrix(), ...) {
     m<-x$getmatrix()
